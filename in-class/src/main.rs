@@ -1,4 +1,5 @@
 
+/*
 fn double(x:i32) -> i32 {
     //return x*2;
    // x*2
@@ -8,10 +9,12 @@ fn double(x:i32) -> i32 {
     x*2*y
    }
 }
+   */
 
 // fn say_hi(x:i32){
 //     println!("Hi John! My fav num {}", x);
 // }
+/*
 fn main() {
     // More Functions
     println!("Double {} equals to {}",5,double(5));
@@ -58,3 +61,36 @@ fn main() {
 
 
 }
+*/
+/*
+fn main() {
+    pub fn generate(num_rows: i32) -> Vec<Vec<i32>> {
+        //Vec<Vec<i32>>
+        // 5
+        // Vec<i32>
+        // [[1], //0
+        // [1,1], // 1
+        // [1,2,1], // 2
+        // [1,3,3,1], // 3 index
+        // [1,4,6,4,1]]
+        let n:usize = num_rows as usize;
+        let mut res: Vec<Vec<i32>> =  vec![];
+        for i in 0..n {
+            // generate a row [i]
+            let mut row: Vec<i32> = vec![1; i + 1];
+            for j in 1..i { // my index i = 2
+                // row[j]
+                row[j] = res[i - 1][j] + res[i - 1][j - 1];
+            }
+            res.push(row);
+        }
+        // Filling res
+        //res[0] ... ? arra [1]
+        //res[3] .. ? array [1,3,3,1]
+        res
+    }
+}
+    */
+    fn main(){
+        
+    }

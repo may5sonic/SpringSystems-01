@@ -310,3 +310,7 @@ fn main() {
     reading_from_file();
 }
 */
+
+fn main () {
+    
+}
