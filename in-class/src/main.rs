@@ -91,6 +91,20 @@ fn main() {
     }
 }
     */
-    fn main(){
-        
-    }
+    //fn main(){
+    //    
+    //}
+#[derive(Debug)]
+enum PaymentMethod {
+    Cash,
+    CreditCard,
+    //DebitCard,
+}
+
+fn main() {
+    let cash = PaymentMethod::Cash;
+    let credit = PaymentMethod::CreditCard;
+
+    println!("Payment method 1: {:?}", cash);
+    println!("Payment method 2: {:?}", credit);
+}
